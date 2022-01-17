@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --main-bg-color: #13293a;
+    --second-blue-color: #0f77c7;
+    --white-color: #fff;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: var(--main-bg-color);
+    min-height: 2500px;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+body {
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.main-tool-bar {
+ 
+  z-index: 20;
+  height: 200px;
+  background: var(--main-bg-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--white-color);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: ease 0.4s;
+}
+.main-tool-bar--scrolled {
+  height: 70px;
+  background: var(--second-blue-color);
+}
+
+.header a {
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+.paralax{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paralax:before{
+content: '';
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 100px;
+z-index: 10;
+}
+
+.paralax:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+   
+    }
+
+
+    .paralax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text {
+    position: relative;
+    color: var(--white-color);
+    font-size: 5em;
+    margin: 5%;
+    z-index: 1;
+}
+#road{
+    z-index: 2;
+    width: 100%;
+}
+#bg {
+    width: 100%;
+}
+#sun {
+    width: 100%;
+}
+
+
+#imageAbout {
+    width: 500px;
+    height: 500px;
+    margin-top: 200px;
+  }
+
+  .mainAbout {
+      background: var(--second-blue-color);
+  }
+
+
+
+  
+
+  #secondPartHome {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+   
+  }
+  
+  #picAndTitle {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+  }
+  
+  
+  #hanifPic {
+      width: 250px;
+      height: 250px;
+      padding: 5%;
+  }
+  
+  #titlesAbout {
+      width: 50%;
+      height: 200px;
+      
+      color: var(--white-color);
+      padding: 5%;
+}
+
+#textAbout {
+    padding: 5%;
+    color: var(--white-color);
+    position: absolute;
+    z-index: 19;
+    margin-top: 1000px;
+}
+
+#aboutTitle1 {
+    font-size: 4rem;
+}
+#aboutTitle2 {
+    font-size: 1.5rem;
+}
+#aboutTitle3 {
+    font-size: 1.25rem;
+    color: rgb(171, 171, 171);
+
+}
+
+
+
+
+/* resume page */
+
+
+
+#resumeBody {
+    background: #314c4d;
+    min-height: 2000px;
+}
+.resumeMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#resumeBox {
+    width: 50%;
+    height: 1000px;
+    border-radius: 14px;
+    margin-top: 140px;
+    background: rgb(218, 216, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.resumeBoxTitle {
+width: 100%;
+height: 80px;
+background: var(--main-bg-color);
+border-top-left-radius: 14px;
+border-top-right-radius: 14px;
+display: flex;
+justify-content: center;
+align-items: center;
+align-self: flex-start;
+padding: 10%;
+
+}
+.resumeBoxTitle--scrolled {
+    height: 40px;
+    background: var(--second-blue-color);
+}
+#resumeBoxTitle p {
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+#skillsBox{
+    
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+#skillBoxleft{
+    width: 50%;
+    
+    height: 100%;
+    border-right: 1px solid #13293a;
+    
+
+}
+#gif {
+    width: 50%;
+    margin-top: 5%;
+    border-radius: 14px;
+}
+
+#resumeBackPic {
+    top: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
