@@ -2,11 +2,11 @@
 // paralax
 
 let bg = document.getElementById("bg");
-
 let sun = document.getElementById("sun");
 let road = document.getElementById("road");
 let text = document.getElementById("text");
 let textAbout = document.getElementById("textAbout");
+
 
 
 
@@ -15,9 +15,6 @@ window.addEventListener('scroll', function(){
 
     bg.style.top = value * 0.15 + 'px';
     textAbout.style.top = value * 0.15 + 'px';
-    
-    
-    
     sun.style.top = value * 0.35 + 'px';
     road.style.top = value * 0.5 + 'px';
     text.style.top = value * 1 + 'px';
@@ -42,8 +39,16 @@ window.addEventListener('scroll', function(){
 
 
 
-// page transition
+// contact
+
+$("html").on("click", "body.tight .wrapper", function() {
+  $('html, body').animate({
+    scrollTop: $('.wrapper').outerHeight() - $(window).height()
+  }, 500);
+});
 
 
- 
 
+$('.arrow').click(function(){
+ $("html").animate({ scrollTop: $('html').prop("scrollHeight")}, 1200);
+});
