@@ -39,16 +39,5 @@ window.addEventListener('scroll', function(){
 
 
 
-// contact
+// skills
 
-$("html").on("click", "body.tight .wrapper", function() {
-  $('html, body').animate({
-    scrollTop: $('.wrapper').outerHeight() - $(window).height()
-  }, 500);
-});
-
-
-
-$('.arrow').click(function(){
- $("html").animate({ scrollTop: $('html').prop("scrollHeight")}, 1200);
-});

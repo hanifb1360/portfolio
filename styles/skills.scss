@@ -1,0 +1,295 @@
+
+#resumeBody {
+    background: #314c4d;
+    min-height: 2000px;
+}
+.resumeMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    
+    transition: 0.5s linear;
+    animation: listTitle 0.25s ease-in 0.35s forwards;
+       
+    
+}
+@keyframes resumeMain {
+
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+    
+  0% {top: -10vh;}
+  100% {top: 0;}
+}
+
+
+
+
+
+#gif {
+    width: 70%;
+    margin-top: 5%;
+    border-radius: 14px;
+    
+    
+}
+
+
+
+#resumeBackPic {
+    top: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+
+/* skills in resume page */
+
+.listTitle{
+  margin-top: 40vh;
+  color: #fff;
+  letter-spacing: 0.75em;
+  font-weight: 200;
+  opacity: 0;
+  position: relative;
+  transition: 1.5s linear;
+  animation: listTitle 0.5s ease-in 0.5s forwards;
+}
+#timeLineTitle {
+  margin-top: 10vh;
+}
+
+@keyframes listTitle {
+
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+    
+  0% {top: -10vh;}
+  100% {top: 0;}
+}
+
+
+
+
+
+$skillBarColor: rgb(74, 102, 139);  
+  
+  
+  ul {
+      
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 14px;
+    padding: 10%;
+    margin-top: 5vh;
+
+  
+  }
+  
+  
+  #skills {
+   
+    
+    height: 80%;
+    width: 70%;
+  
+    li {
+      position: relative;
+      margin-bottom: 10%;
+      padding-left: 6px;
+  
+      .bar-container,
+      .bar1, .bar2, .bar3, .bar4, .bar5, .bar6, .bar7, .bar8, .bar9, .bar10, .bar11, .bar12, .bar13 {  
+        position: absolute;
+        left: 0;
+        height: 15px;  
+        border-radius: 25px;
+        content: "";
+      }
+  
+      .bar-container {
+        bottom: -18px;
+        width: 100%;
+        background-color: rgb(194, 194, 194);
+        text-align: right;
+  
+        .bar1 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $skillBarColor;
+
+        }
+        .bar1-scrolled {
+          top: 0;
+          width: 60%;
+          background-color: $skillBarColor;
+
+        }
+        .bar2 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $skillBarColor;
+
+        }
+        .bar2-scrolled {
+          top: 0;
+          width: 100%;
+          background-color: $skillBarColor;
+
+        }
+        .bar3 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $skillBarColor;
+
+        }
+        .bar3-scrolled {
+          top: 0;
+          width: 100%;
+          background-color: $skillBarColor;
+
+        }
+        .bar4 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $skillBarColor;
+
+        }
+        .bar4-scrolled {
+          top: 0;
+          width: 70%;
+          background-color: $skillBarColor;
+
+        }
+        .bar5 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $skillBarColor;
+
+        }
+        .bar5-scrolled {
+          top: 0;
+          width: 90%;
+          background-color: $skillBarColor;
+
+        }
+        .bar6 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $skillBarColor;
+
+        }
+        .bar6-scrolled {
+          top: 0;
+          width: 100%;
+          background-color: $skillBarColor;
+
+        }
+        .bar7 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $skillBarColor;
+
+        }
+        .bar7-scrolled {
+          top: 0;
+          width: 100%;
+          background-color: $skillBarColor;
+
+        }
+        .bar8 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $skillBarColor;
+
+        }
+        .bar8-scrolled {
+          top: 0;
+          width: 100%;
+          background-color: $skillBarColor;
+
+        }
+        .bar9 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $skillBarColor;
+
+        }
+        .bar9-scrolled {
+          top: 0;
+          width: 100%;
+          background-color: $skillBarColor;
+
+        }
+        .bar10 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $skillBarColor;
+
+        }
+        .bar10-scrolled {
+          top: 0;
+          width: 100%;
+          background-color: $skillBarColor;
+
+        }
+        .bar11 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $skillBarColor;
+
+        }
+        .bar11-scrolled {
+          top: 0;
+          width: 100%;
+          background-color: $skillBarColor;
+
+        }
+        .bar12 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $skillBarColor;
+
+        }
+        .bar12-scrolled {
+          top: 0;
+          width: 100%;
+          background-color: $skillBarColor;
+
+        }
+        .bar13 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $skillBarColor;
+
+        }
+        .bar13-scrolled {
+          top: 0;
+          width: 100%;
+          background-color: $skillBarColor;
+
+        }
+
+  
+        
+      }
+    }   
+  }

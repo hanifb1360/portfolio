@@ -1,0 +1,334 @@
+#resumeBody {
+  background: #314c4d;
+  min-height: 2000px;
+}
+
+.resumeMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  -webkit-animation: listTitle 0.25s ease-in 0.35s forwards;
+          animation: listTitle 0.25s ease-in 0.35s forwards;
+}
+
+@-webkit-keyframes resumeMain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  0% {
+    top: -10vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes resumeMain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  0% {
+    top: -10vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+#gif {
+  width: 70%;
+  margin-top: 5%;
+  border-radius: 14px;
+}
+
+#resumeBackPic {
+  top: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+/* skills in resume page */
+.listTitle {
+  margin-top: 40vh;
+  color: #fff;
+  letter-spacing: 0.75em;
+  font-weight: 200;
+  opacity: 0;
+  position: relative;
+  -webkit-transition: 1.5s linear;
+  transition: 1.5s linear;
+  -webkit-animation: listTitle 0.5s ease-in 0.5s forwards;
+          animation: listTitle 0.5s ease-in 0.5s forwards;
+}
+
+#timeLineTitle {
+  margin-top: 10vh;
+}
+
+@-webkit-keyframes listTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  0% {
+    top: -10vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes listTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  0% {
+    top: -10vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+ul {
+  list-style-type: none;
+  background-color: white;
+  border-radius: 14px;
+  padding: 10%;
+  margin-top: 5vh;
+}
+
+#skills {
+  height: 80%;
+  width: 70%;
+}
+
+#skills li {
+  position: relative;
+  margin-bottom: 10%;
+  padding-left: 6px;
+}
+
+#skills li .bar-container,
+#skills li .bar1, #skills li .bar2, #skills li .bar3, #skills li .bar4, #skills li .bar5, #skills li .bar6, #skills li .bar7, #skills li .bar8, #skills li .bar9, #skills li .bar10, #skills li .bar11, #skills li .bar12, #skills li .bar13 {
+  position: absolute;
+  left: 0;
+  height: 15px;
+  border-radius: 25px;
+  content: "";
+}
+
+#skills li .bar-container {
+  bottom: -18px;
+  width: 100%;
+  background-color: #c2c2c2;
+  text-align: right;
+}
+
+#skills li .bar-container .bar1 {
+  top: 0;
+  width: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar1-scrolled {
+  top: 0;
+  width: 60%;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar2 {
+  top: 0;
+  width: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar2-scrolled {
+  top: 0;
+  width: 100%;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar3 {
+  top: 0;
+  width: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar3-scrolled {
+  top: 0;
+  width: 100%;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar4 {
+  top: 0;
+  width: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar4-scrolled {
+  top: 0;
+  width: 70%;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar5 {
+  top: 0;
+  width: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar5-scrolled {
+  top: 0;
+  width: 90%;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar6 {
+  top: 0;
+  width: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar6-scrolled {
+  top: 0;
+  width: 100%;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar7 {
+  top: 0;
+  width: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar7-scrolled {
+  top: 0;
+  width: 100%;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar8 {
+  top: 0;
+  width: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar8-scrolled {
+  top: 0;
+  width: 100%;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar9 {
+  top: 0;
+  width: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar9-scrolled {
+  top: 0;
+  width: 100%;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar10 {
+  top: 0;
+  width: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar10-scrolled {
+  top: 0;
+  width: 100%;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar11 {
+  top: 0;
+  width: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar11-scrolled {
+  top: 0;
+  width: 100%;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar12 {
+  top: 0;
+  width: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar12-scrolled {
+  top: 0;
+  width: 100%;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar13 {
+  top: 0;
+  width: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-color: #4a668b;
+}
+
+#skills li .bar-container .bar13-scrolled {
+  top: 0;
+  width: 100%;
+  background-color: #4a668b;
+}
+/*# sourceMappingURL=skills.css.map */
