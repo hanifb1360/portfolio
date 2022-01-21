@@ -1,9 +1,16 @@
 #resumeBody {
-  background: #314c4d;
+  background: #131313;
   min-height: 2000px;
 }
 
-.resumeMain {
+#resumeBody #resumeBackPic {
+  top: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#resumeBody .resumeMain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,6 +29,71 @@
   transition: 0.5s linear;
   -webkit-animation: listTitle 0.25s ease-in 0.35s forwards;
           animation: listTitle 0.25s ease-in 0.35s forwards;
+}
+
+#resumeBody .resumeMain .period {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 5%;
+  border-radius: 14px;
+  margin-top: 5%;
+  width: 70%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: -2000px;
+}
+
+#resumeBody .resumeMain .period h2 {
+  letter-spacing: 0.2em;
+  font-weight: 300;
+}
+
+#resumeBody .resumeMain .period h4 {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+#resumeBody .resumeMain #period4 {
+  background: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: white;
+  padding: 1.5%;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#resumeBody .resumeMain #gif {
+  width: 70%;
+  margin-top: 5%;
+  border-radius: 14px;
 }
 
 @-webkit-keyframes resumeMain {
@@ -54,19 +126,6 @@
   }
 }
 
-#gif {
-  width: 70%;
-  margin-top: 5%;
-  border-radius: 14px;
-}
-
-#resumeBackPic {
-  top: 0;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-}
-
 /* skills in resume page */
 .listTitle {
   margin-top: 40vh;
@@ -82,7 +141,7 @@
 }
 
 #timeLineTitle {
-  margin-top: 10vh;
+  margin-top: 15vh;
 }
 
 @-webkit-keyframes listTitle {

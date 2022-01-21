@@ -22,7 +22,7 @@ window.addEventListener('scroll', function(){
 
 // scroll
 
-
+gsap.registerPlugin(ScrollTrigger);
   ScrollTrigger.create({
     start: 'top -80',
     end: 99999,
