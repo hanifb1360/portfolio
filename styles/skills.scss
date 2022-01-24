@@ -1,7 +1,8 @@
 
+
 #resumeBody {
     background: #131313;
-    min-height: 2000px;
+    height: 100%;
 
     #resumeBackPic {
       top: 0;
@@ -57,6 +58,41 @@
       justify-content: center;
       align-items: center;
     }
+
+    #period2 {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    #period3 {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    #period5{
+      background: rgb(216, 216, 216);
+      color: #434343;
+    }
+
+
+    #period6 {
+      background: rgb(202, 223, 224);
+      color: #434343;
+    }
+    #period7 {
+      background: rgb(181, 215, 218);
+      color: #434343;
+    }
+    #period8 {
+      background: rgb(162, 211, 214);
+
+      color: #434343;
+    }
+    #period9 {
+      background: rgb(142, 198, 202);
+      color: #434343;
+    }
+    #period10 {
+      background: rgb(120, 184, 189);
+      color: #434343;
+    }
     
       
       
@@ -108,7 +144,8 @@
   transition: 1.5s linear;
   animation: listTitle 0.5s ease-in 0.5s forwards;
 }
-#timeLineTitle {
+
+#timeLineTitle, #languageTitle {
   margin-top: 15vh;
 }
 
@@ -126,6 +163,7 @@
 
 
 $skillBarColor: rgb(74, 102, 139);  
+$languageBarColor: rgb(52, 184, 151);  
   
   
   ul {
@@ -152,7 +190,7 @@ $skillBarColor: rgb(74, 102, 139);
       padding-left: 6px;
   
       .bar-container,
-      .bar1, .bar2, .bar3, .bar4, .bar5, .bar6, .bar7, .bar8, .bar9, .bar10, .bar11, .bar12, .bar13 {  
+      .bar1, .bar2, .bar3, .bar4, .bar5, .bar6, .bar7, .bar8, .bar9, .bar10, .bar11, .bar12, .bar13, .bar14, .bar15, .bar16 {  
         position: absolute;
         left: 0;
         height: 15px;  
@@ -335,9 +373,95 @@ $skillBarColor: rgb(74, 102, 139);
           background-color: $skillBarColor;
 
         }
+        .bar14 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $languageBarColor;
+
+        }
+        .bar14-scrolled {
+          top: 0;
+          width: 70%;
+          background-color: $languageBarColor;
+
+        }
+        .bar15 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $languageBarColor;
+
+        }
+        .bar15-scrolled {
+          top: 0;
+          width: 60%;
+          background-color: $languageBarColor;
+
+        }
+        .bar16 {
+          top: 0;
+          width: 0;
+          transition: ease 0.4s;
+          background-color: $languageBarColor;
+
+        }
+        .bar16-scrolled {
+          top: 0;
+          width: 100%;
+          background-color: $languageBarColor;
+
+        }
 
   
         
       }
     }   
+  }
+
+
+
+
+  .arrow {
+    text-align: center;
+    
+    padding: 1%;
+    opacity: 20%;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    position: fixed;
+    font-size: 3rem;
+
+    top: 80%;
+    right: 3%;
+    z-index: 1000;
+    color: #fff;
+  }
+  .bounce {
+
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+  .toTop {
+    margin-top: 5%;
+    background: none;
+    font-size: 4rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 60px;
   }

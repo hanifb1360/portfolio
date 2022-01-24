@@ -3,7 +3,7 @@
 
 :root {
     --main-bg-color: #13293a;
-    --second-blue-color: #0f77c7;
+    --second-blue-color: #22435c;
     --white-color: #fff;
   }
 *{
@@ -128,7 +128,21 @@ z-index: 10;
 
 
   
+#main-home {
+    opacity: 0;
+    transition: 0.5s linear;
+    animation: mainHome  0.25s ease-in 0.35s forwards;
+}
+@keyframes mainHome {
 
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+      
+    0% {top: -10vh;}
+    100% {top: 0;}
+  }
+
+  
   #secondPartHome {
 
     display: flex;

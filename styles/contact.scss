@@ -1,13 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+$background-color-contact: rgb(59, 95, 104);
+$background-color-contact-light: rgb(61, 106, 117);
+
 #contactBody {
-    background-color: rgb(80, 140, 155);
+    background-color: $background-color-contact;
     color: #fff;
-    min-height: 130vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    overflow: hidden;
+    
+    
   }
   
   
@@ -23,23 +30,32 @@
   }
 
 
-  #contactheader {
+  
 
-  }
+  
+  .mainContact {
 
-  @keyframes btn {
+    opacity: 0;
+    transition: 0.5s linear;
+    animation: mainContact 0.25s ease-in 0.35s forwards;
+   
+    .wrapper {
+      margin-top: 35vh;
+      max-width: 960px;
+    }
+    
+    @keyframes mainContact {
 
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-
-    0% {bottom: -50vh;}
-    100% {bottom: 0;}
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+        
+      0% {top: -10vh;}
+      100% {top: 0;}
+    }
+    
   }
   
-  .wrapper {
-    margin: 0 15px;
-    max-width: 960px;
-  }
+  
   
   h1 {
     position: relative;
@@ -48,14 +64,7 @@
     transition: 1.5s linear;
   }
   
-  @keyframes title {
-
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-
-    0% {top: -10vh;}
-    100% {top: 0;}
-  }
+  
   
   .content {
     margin: 25px 0 50px 0;
@@ -75,29 +84,75 @@
     100% {bottom: 0;}
   }
   
-  .btn {
-    border: 2px solid #fff;
-    border-radius: 14px;
-    color: #fff;
-    padding: .5rem 1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    opacity: 0;
+  
+  
+  #send-btn {
+    border: 2px solid currentColor;
+    border-radius: 3rem;
+    color: $background-color-contact;
     
-    animation: btn 3.5s ease-in 0.5s forwards;
+    font-size: 2rem;
+    font-weight: 100;
+    overflow: hidden;
+    padding: 2rem 3rem;
+    position: relative;
+    text-decoration: none;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    
+    &::after {
+      background-color: rgb(94, 220, 224);
+      border-radius: 3rem;
+      color: #fff;
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(-100%, 0) rotate(10deg);
+      transform-origin: top left;
+      transition: .2s transform ease-out;
+      will-change: transform;
+      z-index: -1; }
+      
+    &:hover::after {
+      transform: translate(0, 0);
+      
+    }
+      
+      
+    &:hover {
+      border: 2px solid transparent;
+      color: $background-color-contact;
+      transform: scale(1.05);
+      will-change: transform;
+    }
+      
+      
   }
-  
-  @keyframes btn {
 
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+  .socialMedia {
+    width: 100%;
+    height: 20vh;
+    
+    
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3rem;
 
-    0% {bottom: -50vh;}
-    100% {bottom: 0;}
-  }
-  
-  .btn:hover {
-    background-color: #fff;
-    color: #000;
-    font-weight: bold;
+    a {
+      color: rgb(255, 255, 255);
+      list-style: none;
+      transition: .2s transform ease-out;
+      &:hover {
+        color: rgb(94, 220, 224);
+      }
+    }
+
+    
   }

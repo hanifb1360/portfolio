@@ -93,6 +93,27 @@ ScrollTrigger.create({
   toggleClass: {className: 'bar13-scrolled', targets: '.bar13'}
   
 });
+ScrollTrigger.create({
+  trigger: '.bar14',
+  start: 'top 70%',
+  end: 99999,
+  toggleClass: {className: 'bar14-scrolled', targets: '.bar14'}
+  
+});
+ScrollTrigger.create({
+  trigger: '.bar15',
+  start: 'top 70%',
+  end: 99999,
+  toggleClass: {className: 'bar15-scrolled', targets: '.bar15'}
+  
+});
+ScrollTrigger.create({
+  trigger: '.bar16',
+  start: 'top 70%',
+  end: 99999,
+  toggleClass: {className: 'bar16-scrolled', targets: '.bar16'}
+  
+});
 
 gsap.to('#period1', {
   x:1000,
@@ -102,7 +123,7 @@ gsap.to('#period1', {
     start: "top 100%",
     end: 'top 40%',
     // ease: "back.out(1.7)",
-    scrub: 1,
+    scrub: 2,
     toggleActions: 'restart none none none',
    
 
@@ -110,12 +131,12 @@ gsap.to('#period1', {
 });
 gsap.to('#period2', {
   x:1000,
-  duration: 1,
+  duration: 6,
   scrollTrigger: {
     trigger: '#period2',
     start: "top 100%",
     end: 'top 40%',
-    scrub: 1,
+    scrub: 2,
     toggleActions: 'restart none none none',
     
 
@@ -123,12 +144,12 @@ gsap.to('#period2', {
 });
 gsap.to('#period3', {
   x:1000,
-  duration: 1,
+  duration: 6,
   scrollTrigger: {
     trigger: '#period3',
     start: "top 100%",
     end: 'top 40%',
-    scrub: 1,
+    scrub: 2,
     toggleActions: 'restart none none none',
     
 
@@ -136,9 +157,23 @@ gsap.to('#period3', {
 });
 gsap.to('#period4', {
   x:1000,
-  duration: 1,
+  duration: 2,
   scrollTrigger: {
     trigger: '#period4',
+    start: "top 100%",
+    end: 'top 40%',
+    scrub: 1,
+    toggleActions: 'restart none none none',
+    
+    
+
+  }
+});
+gsap.to('#period5', {
+  x:1000,
+  duration: 2,
+  scrollTrigger: {
+    trigger: '#period5',
     start: "top 100%",
     end: 'top 40%',
     scrub: 1,
@@ -147,3 +182,83 @@ gsap.to('#period4', {
 
   }
 });
+gsap.to('#period6', {
+  x:1000,
+  duration: 2,
+  scrollTrigger: {
+    trigger: '#period6',
+    start: "top 100%",
+    end: 'top 40%',
+    scrub: 1,
+    toggleActions: 'restart none none none',
+    
+
+  }
+});
+gsap.to('#period7', {
+  x:1000,
+  duration: 2,
+  scrollTrigger: {
+    trigger: '#period7',
+    start: "top 100%",
+    end: 'top 40%',
+    scrub: 1,
+    toggleActions: 'restart none none none',
+    
+
+  }
+});
+gsap.to('#period8', {
+  x:1000,
+  duration: 2,
+  scrollTrigger: {
+    trigger: '#period8',
+    start: "top 100%",
+    end: 'top 40%',
+    scrub: 1,
+    toggleActions: 'restart none none none',
+    
+
+  }
+});
+gsap.to('#period9', {
+  x:1000,
+  duration: 2,
+  scrollTrigger: {
+    trigger: '#period9',
+    start: "top 100%",
+    end: 'top 40%',
+    scrub: 1,
+    toggleActions: 'restart none none none',
+    
+
+  }
+});
+gsap.to('#period10', {
+  x:1000,
+  duration: 2,
+  scrollTrigger: {
+    trigger: '#period10',
+    start: "top 100%",
+    end: 'top 40%',
+    scrub: 1,
+    toggleActions: 'restart none none none',
+    
+
+  }
+});
+
+gsap.to('.arrow', {
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: '.toTop',
+    start: "bottom 100%",
+    end: 'bottom 40%',
+    
+    toggleActions: 'restart none none none',
+    
+
+  }
+});
+
