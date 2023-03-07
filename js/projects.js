@@ -42,7 +42,7 @@ function createProjectCard(project) {
   readMore.style.transition = "0.5s ease-in-out";
 
   readMore.addEventListener("click", function () {
-    window.open(project.link, "_blank");
+    window.location.href = project.link;
   });
 
   overlay.appendChild(title);
@@ -78,7 +78,7 @@ const projects = [
     title: "tDigital",
     description: "Gatsby & WordPress Project",
     image: "images/tdigital-dark.png",
-    link: "https://shikton.vercel.app/",
+    link: "projects/tdigital/tdigital.html",
   },
   {
     title: "Shikton Webshop",
