@@ -84,7 +84,7 @@ const projects = [
     title: "Shikton Webshop",
     description: "React JS, Strapi & Stripe Project",
     image: "images/shikton-dark.png",
-    link: "https://shikton.vercel.app/",
+    link: "projects/shikton/shikton.html",
   },
   {
     title: "SNEAKEX",

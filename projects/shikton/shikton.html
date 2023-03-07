@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project Details</title>
+    <link rel="stylesheet" href="../project.css" />
+  </head>
+  <body class="project-body">
+    <div class="project-container">
+      <!-- Project details -->
+
+      <img
+        class="project-img"
+        src="../../images/shikton.png"
+        alt="Project Image"
+      />
+      <h1 class="project-title">Shikton</h1>
+      <h3 class="project-sub-title">A fullstack webshop project</h3>
+
+      <div class="project-tech-container">
+        <div class="project-tech">
+          <p class="project-tech-text">React JS</p>
+        </div>
+        <div class="project-tech">
+          <p class="project-tech-text">Sass</p>
+        </div>
+        <div class="project-tech">
+          <p class="project-tech-text">Strapi</p>
+        </div>
+        <div class="project-tech">
+          <p class="project-tech-text">Stripe</p>
+        </div>
+      </div>
+      <p class="project-desc">
+        The project I worked on is a web application built with React JS as the
+        frontend framework, Strapi as the backend CMS, and Stripe as the payment
+        gateway.
+      </p>
+
+      <p class="project-desc">
+        The application is styled using Sass, a CSS preprocessor that provides a
+        more efficient and flexible way to write CSS. The backend of the
+        application is deployed on Render.com, a cloud platform that simplifies
+        the deployment process with a user-friendly interface. The frontend is
+        deployed on Firebase, a scalable and secure platform for web and mobile
+        applications.
+      </p>
+
+      <p class="project-desc">
+        The application allows users to create an account, browse through a list
+        of products, and purchase them using Stripe as the payment method. The
+        products are managed through Strapi, which provides an easy-to-use
+        interface for content creation and management. The user interface is
+        designed to be responsive, accessible, and user-friendly, with a clean
+        and modern design.
+      </p>
+      <p class="project-desc">
+        The application also includes features such as user authentication, cart
+        management, and order tracking. Overall, this project demonstrates the
+        use of modern web development technologies to build a scalable, secure,
+        and functional web application that provides a seamless user experience.
+      </p>
+
+      <div class="project-button-container">
+        <button class="demo-button project-button">Demo</button>
+        <button class="code-button project-button">Code</button>
+      </div>
+    </div>
+
+    <script>
+      // Add event listeners to the buttons
+      const demoButton = document.querySelector(".demo-button");
+      demoButton.addEventListener("click", () => {
+        window.location.href = "https://project-demo-url.com"; // Replace with actual demo URL
+      });
+
+      const codeButton = document.querySelector(".code-button");
+      codeButton.addEventListener("click", () => {
+        window.location.href = "https://project-code-url.com"; // Replace with actual code URL
+      });
+    </script>
+  </body>
+</html>
