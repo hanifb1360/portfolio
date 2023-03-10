@@ -50,6 +50,7 @@ body::after {
 
 h1 {
   position: relative;
+  font-weight: 400;
   top: 0px;
   animation: title 1.35s ease-in forwards;
   transition: 1.5s linear;
@@ -85,7 +86,7 @@ h1 {
   font-size: 2rem;
   font-weight: 100;
   overflow: hidden;
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
   position: relative;
   text-decoration: none;
   transition: 0.2s transform ease-in-out;

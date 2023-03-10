@@ -3,11 +3,11 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.create({
   trigger: ".bar1",
   start: "top 70%",
-  end: 99999,
+  end: 110000,
   toggleClass: { className: "bar1-scrolled", targets: ".bar1" },
 });
 ScrollTrigger.create({
-  trigger: ".bar2",
+  trigger: ".bar3",
   start: "top 90%",
   end: 99999,
   toggleClass: { className: "bar2-scrolled", targets: ".bar2" },
@@ -43,7 +43,7 @@ ScrollTrigger.create({
   toggleClass: { className: "bar7-scrolled", targets: ".bar7" },
 });
 ScrollTrigger.create({
-  trigger: ".bar8",
+  trigger: ".bar6",
   start: "top 50%",
   end: 99999,
   toggleClass: { className: "bar8-scrolled", targets: ".bar8" },
@@ -55,7 +55,7 @@ ScrollTrigger.create({
   toggleClass: { className: "bar9-scrolled", targets: ".bar9" },
 });
 ScrollTrigger.create({
-  trigger: ".bar10",
+  trigger: ".bar8",
   start: "top 50%",
   end: 99999,
   toggleClass: { className: "bar10-scrolled", targets: ".bar10" },
@@ -92,7 +92,7 @@ ScrollTrigger.create({
   toggleClass: { className: "bar15-scrolled", targets: ".bar15" },
 });
 ScrollTrigger.create({
-  trigger: ".bar16",
+  trigger: ".bar15",
   start: "top 70%",
   end: 99999,
   toggleClass: { className: "bar16-scrolled", targets: ".bar16" },
