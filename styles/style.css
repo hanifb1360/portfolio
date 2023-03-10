@@ -13,7 +13,7 @@
 }
 body {
   background: var(--main-bg-color);
-  min-height: 2500px;
+  height: fit-content;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
@@ -93,6 +93,17 @@ body {
   font-size: 5em;
   margin: 5%;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#text h3 {
+  font-weight: 200;
+}
+#text p {
+  font-size: 24px;
+  color: rgb(189, 121, 33);
 }
 #road {
   z-index: 2;
@@ -146,6 +157,7 @@ body {
 
 #picAndTitle {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -153,16 +165,20 @@ body {
 
 #hanifPic {
   width: 250px;
-  height: 250px;
-  padding: 5%;
+  border-radius: 50%;
 }
-
-#titlesAbout {
-  width: 50%;
-  height: 200px;
-
+#aboutTitle1 {
   color: var(--white-color);
-  padding: 5%;
+  font-weight: 200;
+  border-bottom: solid 0.5px #b0b0b0;
+}
+#aboutTitle2 {
+  color: #b0b0b0;
+  font-weight: 200;
+}
+#aboutTitle3 {
+  color: #b0b0b0;
+  font-weight: 100;
 }
 
 #textAbout {
@@ -173,18 +189,59 @@ body {
   margin-top: 1000px;
 }
 
-#aboutTitle1 {
-  font-size: 4rem;
-}
-#aboutTitle2 {
-  font-size: 1.5rem;
-}
-#aboutTitle3 {
-  font-size: 1.25rem;
-  color: rgb(171, 171, 171);
+.aboutTextInside {
+  margin-bottom: 20px;
+  line-height: 25px;
+  font-weight: 200;
 }
 
-/* resume page */
+.homeLinksBox {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.homeLink {
+  color: #fff;
+  font-size: 20px;
+
+  transition: 0.3s ease;
+}
+
+@media screen and (min-width: 700px) {
+  .my-photo {
+    width: 20%;
+    height: auto;
+  }
+  .homeLinksBox {
+    margin-top: 60px;
+  }
+
+  .homeLink {
+    font-size: 30px;
+  }
+  .homeLink:hover {
+    color: #90e8f0;
+  }
+
+  #textAbout {
+    margin-top: 1100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #text h3 {
+    font-weight: 300;
+    font-size: 40px;
+  }
+  #text p {
+    font-size: 20px;
+  }
+}
+
+/* projects page */
 .projects-wrapper {
   height: fit-content;
   width: 100%;

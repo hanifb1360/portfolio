@@ -115,7 +115,8 @@
   animation: listTitle 0.5s ease-in 0.5s forwards;
 }
 
-#timeLineTitle, #languageTitle {
+#timeLineTitle,
+#languageTitle {
   margin-top: 15vh;
 }
 
@@ -151,7 +152,22 @@ ul {
   padding-left: 6px;
 }
 #skills li .bar-container,
-#skills li .bar1, #skills li .bar2, #skills li .bar3, #skills li .bar4, #skills li .bar5, #skills li .bar6, #skills li .bar7, #skills li .bar8, #skills li .bar9, #skills li .bar10, #skills li .bar11, #skills li .bar12, #skills li .bar13, #skills li .bar14, #skills li .bar15, #skills li .bar16 {
+#skills li .bar1,
+#skills li .bar2,
+#skills li .bar3,
+#skills li .bar4,
+#skills li .bar5,
+#skills li .bar6,
+#skills li .bar7,
+#skills li .bar8,
+#skills li .bar9,
+#skills li .bar10,
+#skills li .bar11,
+#skills li .bar12,
+#skills li .bar13,
+#skills li .bar14,
+#skills li .bar15,
+#skills li .bar16 {
   position: absolute;
   left: 0;
   height: 15px;
@@ -172,7 +188,7 @@ ul {
 }
 #skills li .bar-container .bar1-scrolled {
   top: 0;
-  width: 60%;
+  width: 70%;
   background-color: rgb(74, 102, 139);
 }
 #skills li .bar-container .bar2 {
@@ -183,7 +199,7 @@ ul {
 }
 #skills li .bar-container .bar2-scrolled {
   top: 0;
-  width: 100%;
+  width: 90%;
   background-color: rgb(74, 102, 139);
 }
 #skills li .bar-container .bar3 {
@@ -194,7 +210,7 @@ ul {
 }
 #skills li .bar-container .bar3-scrolled {
   top: 0;
-  width: 100%;
+  width: 90%;
   background-color: rgb(74, 102, 139);
 }
 #skills li .bar-container .bar4 {
@@ -216,7 +232,7 @@ ul {
 }
 #skills li .bar-container .bar5-scrolled {
   top: 0;
-  width: 90%;
+  width: 60%;
   background-color: rgb(74, 102, 139);
 }
 #skills li .bar-container .bar6 {
@@ -227,7 +243,7 @@ ul {
 }
 #skills li .bar-container .bar6-scrolled {
   top: 0;
-  width: 100%;
+  width: 70%;
   background-color: rgb(74, 102, 139);
 }
 #skills li .bar-container .bar7 {
@@ -238,7 +254,7 @@ ul {
 }
 #skills li .bar-container .bar7-scrolled {
   top: 0;
-  width: 100%;
+  width: 60%;
   background-color: rgb(74, 102, 139);
 }
 #skills li .bar-container .bar8 {
@@ -249,7 +265,7 @@ ul {
 }
 #skills li .bar-container .bar8-scrolled {
   top: 0;
-  width: 100%;
+  width: 50%;
   background-color: rgb(74, 102, 139);
 }
 #skills li .bar-container .bar9 {
@@ -260,7 +276,7 @@ ul {
 }
 #skills li .bar-container .bar9-scrolled {
   top: 0;
-  width: 100%;
+  width: 95%;
   background-color: rgb(74, 102, 139);
 }
 #skills li .bar-container .bar10 {
@@ -271,7 +287,7 @@ ul {
 }
 #skills li .bar-container .bar10-scrolled {
   top: 0;
-  width: 100%;
+  width: 50%;
   background-color: rgb(74, 102, 139);
 }
 #skills li .bar-container .bar11 {
@@ -293,7 +309,7 @@ ul {
 }
 #skills li .bar-container .bar12-scrolled {
   top: 0;
-  width: 100%;
+  width: 90%;
   background-color: rgb(74, 102, 139);
 }
 #skills li .bar-container .bar13 {
@@ -304,7 +320,7 @@ ul {
 }
 #skills li .bar-container .bar13-scrolled {
   top: 0;
-  width: 100%;
+  width: 70%;
   background-color: rgb(74, 102, 139);
 }
 #skills li .bar-container .bar14 {

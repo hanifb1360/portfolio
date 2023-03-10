@@ -90,7 +90,7 @@ const projects = [
     title: "SNEAKEX",
     description: "React JS, TypeScript & Bootstrap Project",
     image: "images/sneakex-dark.png",
-    link: "https://shikton.vercel.app/",
+    link: "projects/sneakex/sneakex.html",
   },
 ];
 

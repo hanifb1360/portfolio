@@ -1,264 +1,223 @@
-
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
-  trigger: '.bar1',
-  start: 'top 60%',
+  trigger: ".bar1",
+  start: "top 70%",
   end: 99999,
-  toggleClass: {className: 'bar1-scrolled', targets: '.bar1'}
-  
+  toggleClass: { className: "bar1-scrolled", targets: ".bar1" },
 });
 ScrollTrigger.create({
-  trigger: '.bar2',
-  start: 'top 70%',
+  trigger: ".bar2",
+  start: "top 90%",
   end: 99999,
-  toggleClass: {className: 'bar2-scrolled', targets: '.bar2'}
-  
+  toggleClass: { className: "bar2-scrolled", targets: ".bar2" },
 });
 ScrollTrigger.create({
-  trigger: '.bar3',
-  start: 'top 70%',
+  trigger: ".bar3",
+  start: "top 90%",
   end: 99999,
-  toggleClass: {className: 'bar3-scrolled', targets: '.bar3'}
-  
+  toggleClass: { className: "bar3-scrolled", targets: ".bar3" },
 });
 ScrollTrigger.create({
-  trigger: '.bar4',
-  start: 'top 70%',
+  trigger: ".bar4",
+  start: "top 70%",
   end: 99999,
-  toggleClass: {className: 'bar4-scrolled', targets: '.bar4'}
-  
+  toggleClass: { className: "bar4-scrolled", targets: ".bar4" },
 });
 ScrollTrigger.create({
-  trigger: '.bar5',
-  start: 'top 70%',
+  trigger: ".bar5",
+  start: "top 60%",
   end: 99999,
-  toggleClass: {className: 'bar5-scrolled', targets: '.bar5'}
-  
+  toggleClass: { className: "bar5-scrolled", targets: ".bar5" },
 });
 ScrollTrigger.create({
-  trigger: '.bar6',
-  start: 'top 70%',
+  trigger: ".bar6",
+  start: "top 70%",
   end: 99999,
-  toggleClass: {className: 'bar6-scrolled', targets: '.bar6'}
-  
+  toggleClass: { className: "bar6-scrolled", targets: ".bar6" },
 });
 ScrollTrigger.create({
-  trigger: '.bar7',
-  start: 'top 70%',
+  trigger: ".bar7",
+  start: "top 60%",
   end: 99999,
-  toggleClass: {className: 'bar7-scrolled', targets: '.bar7'}
-  
+  toggleClass: { className: "bar7-scrolled", targets: ".bar7" },
 });
 ScrollTrigger.create({
-  trigger: '.bar8',
-  start: 'top 70%',
+  trigger: ".bar8",
+  start: "top 50%",
   end: 99999,
-  toggleClass: {className: 'bar8-scrolled', targets: '.bar8'}
-  
+  toggleClass: { className: "bar8-scrolled", targets: ".bar8" },
 });
 ScrollTrigger.create({
-  trigger: '.bar9',
-  start: 'top 70%',
+  trigger: ".bar9",
+  start: "top 90%",
   end: 99999,
-  toggleClass: {className: 'bar9-scrolled', targets: '.bar9'}
-  
+  toggleClass: { className: "bar9-scrolled", targets: ".bar9" },
 });
 ScrollTrigger.create({
-  trigger: '.bar10',
-  start: 'top 70%',
+  trigger: ".bar10",
+  start: "top 50%",
   end: 99999,
-  toggleClass: {className: 'bar10-scrolled', targets: '.bar10'}
-  
+  toggleClass: { className: "bar10-scrolled", targets: ".bar10" },
 });
 
 ScrollTrigger.create({
-  trigger: '.bar11',
-  start: 'top 70%',
+  trigger: ".bar11",
+  start: "top 100%",
   end: 99999,
-  toggleClass: {className: 'bar11-scrolled', targets: '.bar11'}
-  
+  toggleClass: { className: "bar11-scrolled", targets: ".bar11" },
 });
 ScrollTrigger.create({
-  trigger: '.bar12',
-  start: 'top 70%',
+  trigger: ".bar12",
+  start: "top 90%",
   end: 99999,
-  toggleClass: {className: 'bar12-scrolled', targets: '.bar12'}
-  
+  toggleClass: { className: "bar12-scrolled", targets: ".bar12" },
 });
 ScrollTrigger.create({
-  trigger: '.bar13',
-  start: 'top 70%',
+  trigger: ".bar13",
+  start: "top 70%",
   end: 99999,
-  toggleClass: {className: 'bar13-scrolled', targets: '.bar13'}
-  
+  toggleClass: { className: "bar13-scrolled", targets: ".bar13" },
 });
 ScrollTrigger.create({
-  trigger: '.bar14',
-  start: 'top 70%',
+  trigger: ".bar14",
+  start: "top 70%",
   end: 99999,
-  toggleClass: {className: 'bar14-scrolled', targets: '.bar14'}
-  
+  toggleClass: { className: "bar14-scrolled", targets: ".bar14" },
 });
 ScrollTrigger.create({
-  trigger: '.bar15',
-  start: 'top 70%',
+  trigger: ".bar15",
+  start: "top 70%",
   end: 99999,
-  toggleClass: {className: 'bar15-scrolled', targets: '.bar15'}
-  
+  toggleClass: { className: "bar15-scrolled", targets: ".bar15" },
 });
 ScrollTrigger.create({
-  trigger: '.bar16',
-  start: 'top 70%',
+  trigger: ".bar16",
+  start: "top 70%",
   end: 99999,
-  toggleClass: {className: 'bar16-scrolled', targets: '.bar16'}
-  
+  toggleClass: { className: "bar16-scrolled", targets: ".bar16" },
 });
 
-gsap.to('#period1', {
-  x:1000,
+gsap.to("#period1", {
+  x: 1000,
   duration: 1,
   scrollTrigger: {
-    trigger: '#period1',
+    trigger: "#period1",
     start: "top 100%",
-    end: 'top 40%',
+    end: "top 40%",
     // ease: "back.out(1.7)",
     scrub: 2,
-    toggleActions: 'restart none none none',
-   
-
-  }
+    toggleActions: "restart none none none",
+  },
 });
-gsap.to('#period2', {
-  x:1000,
+gsap.to("#period2", {
+  x: 1000,
   duration: 6,
   scrollTrigger: {
-    trigger: '#period2',
+    trigger: "#period2",
     start: "top 100%",
-    end: 'top 40%',
+    end: "top 40%",
     scrub: 2,
-    toggleActions: 'restart none none none',
-    
-
-  }
+    toggleActions: "restart none none none",
+  },
 });
-gsap.to('#period3', {
-  x:1000,
+gsap.to("#period3", {
+  x: 1000,
   duration: 6,
   scrollTrigger: {
-    trigger: '#period3',
+    trigger: "#period3",
     start: "top 100%",
-    end: 'top 40%',
+    end: "top 40%",
     scrub: 2,
-    toggleActions: 'restart none none none',
-    
-
-  }
+    toggleActions: "restart none none none",
+  },
 });
-gsap.to('#period4', {
-  x:1000,
+gsap.to("#period4", {
+  x: 1000,
   duration: 2,
   scrollTrigger: {
-    trigger: '#period4',
+    trigger: "#period4",
     start: "top 100%",
-    end: 'top 40%',
+    end: "top 40%",
     scrub: 1,
-    toggleActions: 'restart none none none',
-    
-    
-
-  }
+    toggleActions: "restart none none none",
+  },
 });
-gsap.to('#period5', {
-  x:1000,
+gsap.to("#period5", {
+  x: 1000,
   duration: 2,
   scrollTrigger: {
-    trigger: '#period5',
+    trigger: "#period5",
     start: "top 100%",
-    end: 'top 40%',
+    end: "top 40%",
     scrub: 1,
-    toggleActions: 'restart none none none',
-    
-
-  }
+    toggleActions: "restart none none none",
+  },
 });
-gsap.to('#period6', {
-  x:1000,
+gsap.to("#period6", {
+  x: 1000,
   duration: 2,
   scrollTrigger: {
-    trigger: '#period6',
+    trigger: "#period6",
     start: "top 100%",
-    end: 'top 40%',
+    end: "top 40%",
     scrub: 1,
-    toggleActions: 'restart none none none',
-    
-
-  }
+    toggleActions: "restart none none none",
+  },
 });
-gsap.to('#period7', {
-  x:1000,
+gsap.to("#period7", {
+  x: 1000,
   duration: 2,
   scrollTrigger: {
-    trigger: '#period7',
+    trigger: "#period7",
     start: "top 100%",
-    end: 'top 40%',
+    end: "top 40%",
     scrub: 1,
-    toggleActions: 'restart none none none',
-    
-
-  }
+    toggleActions: "restart none none none",
+  },
 });
-gsap.to('#period8', {
-  x:1000,
+gsap.to("#period8", {
+  x: 1000,
   duration: 2,
   scrollTrigger: {
-    trigger: '#period8',
+    trigger: "#period8",
     start: "top 100%",
-    end: 'top 40%',
+    end: "top 40%",
     scrub: 1,
-    toggleActions: 'restart none none none',
-    
-
-  }
+    toggleActions: "restart none none none",
+  },
 });
-gsap.to('#period9', {
-  x:1000,
+gsap.to("#period9", {
+  x: 1000,
   duration: 2,
   scrollTrigger: {
-    trigger: '#period9',
+    trigger: "#period9",
     start: "top 100%",
-    end: 'top 40%',
+    end: "top 40%",
     scrub: 1,
-    toggleActions: 'restart none none none',
-    
-
-  }
+    toggleActions: "restart none none none",
+  },
 });
-gsap.to('#period10', {
-  x:1000,
+gsap.to("#period10", {
+  x: 1000,
   duration: 2,
   scrollTrigger: {
-    trigger: '#period10',
+    trigger: "#period10",
     start: "top 100%",
-    end: 'top 40%',
+    end: "top 40%",
     scrub: 1,
-    toggleActions: 'restart none none none',
-    
-
-  }
+    toggleActions: "restart none none none",
+  },
 });
 
-gsap.to('.arrow', {
+gsap.to(".arrow", {
   opacity: 0,
   duration: 0.5,
   scrollTrigger: {
-    trigger: '.toTop',
+    trigger: ".toTop",
     start: "bottom 100%",
-    end: 'bottom 40%',
-    
-    toggleActions: 'restart none none none',
-    
+    end: "bottom 40%",
 
-  }
+    toggleActions: "restart none none none",
+  },
 });
-
